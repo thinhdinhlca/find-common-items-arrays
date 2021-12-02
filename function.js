@@ -7,7 +7,7 @@ gender = gender.value ?? "";
 price = price.value ?? "";
 type = type.value ?? "";
   
-var arrays = [[$location],[$gender],[$price],[$type]];
+var arrays = [[${location}],[${gender}],[${price}],[${type}]];
   
 var res1 = arrays.shift().filter(function(v) {
     return arrays.every(function(a) {
