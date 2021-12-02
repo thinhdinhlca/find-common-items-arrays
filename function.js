@@ -1,16 +1,22 @@
-window.function = function (name) {
+window.function = function (location, gender, price, type) {
 
-  name = name.value ?? "";
+//var arrays = [['apple', 'orange', 'banana', 'pear', 'fish', 'pancake', 'taco', 'pizza'],['taco', 'fish', 'apple', 'pizza'],['banana', 'pizza', 'fish', 'apple']];
 
-  if (name == "") {
-    return "";
-  }
+location = location.value ?? "";
+gender = gender.value ?? "";
+price = price.value ?? "";
+type = type.value ?? "";
+  
+var arrays = [[$location],[$gender],[$price],[$type]];
+  
+var res1 = arrays.shift().filter(function(v) {
+    return arrays.every(function(a) {
+        return a.indexOf(v) !== -1;
+    });
+});
 
-  else {
-    name = name.trim();
-    arr = name.split(" ");
-    final = arr[0];
-    return final;
-  }
+var res2 = res1.join(', ');
+
+return res2
 
 }
