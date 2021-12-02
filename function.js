@@ -1,13 +1,18 @@
-window.function = function (location, gender, price, type) {
+window.function = function (location, gender, price, htype) {
 
 //var arrays = [['apple', 'orange', 'banana', 'pear', 'fish', 'pancake', 'taco', 'pizza'],['taco', 'fish', 'apple', 'pizza'],['banana', 'pizza', 'fish', 'apple']];
 
 location = location.value ?? "";
 gender = gender.value ?? "";
 price = price.value ?? "";
-type = type.value ?? "";
+htype = htype.value ?? "";
+
+loc_arr = location.split(",");
+gen_arr = gender.split(",");
+prc_arr = price.split(",");
+htype_arr = htype.split(",");
   
-var arrays = [[${location}],[${gender}],[${price}],[${type}]];
+var arrays = [loc_arr,gen_arr,prc_arr,htype_arr];
   
 var res1 = arrays.shift().filter(function(v) {
     return arrays.every(function(a) {
