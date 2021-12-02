@@ -1,13 +1,28 @@
 [
   {
     "kind": "column",
-    "name": "Get first name",
-    "description": "Get first name from user's full name",
+    "name": "Get common items from lists of items",
+    "description": "",
     "author": "Thinh Dinh <thinh@lowcode.agency>",
     "params": [
       {
-        "name": "name",
-        "displayName": "Name",
+        "name": "location",
+        "displayName": "Location",
+        "type": "string"
+      },
+      {
+        "name": "gender",
+        "displayName": "Gender",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "displayName": "Price",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "displayName": "Type",
         "type": "string"
       }
     ],
