@@ -21,8 +21,8 @@
         "type": "string"
       },
       {
-        "name": "type",
-        "displayName": "Type",
+        "name": "htype",
+        "displayName": "Horse Type",
         "type": "string"
       }
     ],
