@@ -24,6 +24,11 @@
         "name": "htype",
         "displayName": "Horse Type",
         "type": "string"
+      },
+      {
+        "name": "all",
+        "displayName": "All",
+        "type": "string"
       }
     ],
     "result": {
