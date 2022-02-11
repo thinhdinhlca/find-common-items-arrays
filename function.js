@@ -8,11 +8,11 @@ price = price.value ?? "";
 htype = htype.value ?? "";
 all = all.value ?? "";
 
-loc_arr = location.split(",");
-gen_arr = gender.split(",");
-prc_arr = price.split(",");
-htype_arr = htype.split(",");
-all_arr = all.split(",");
+loc_arr = location.split(", ");
+gen_arr = gender.split(", ");
+prc_arr = price.split(", ");
+htype_arr = htype.split(", ");
+all_arr = all.split(", ");
   
 let res_arr = [];
   
